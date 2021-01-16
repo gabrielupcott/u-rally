@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import { useState } from 'react';
 import ReactMapGL, {FullscreenControl, Popup} from 'react-map-gl';
+import Header from './Header'
 
 function Map() {
   const [viewport, setViewport] = useState({

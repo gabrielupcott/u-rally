@@ -4,6 +4,7 @@ import Routes from './routes'
 import Landing from './Landing'
 import Map from './Map'
 import Create from './Create'
+import Header from './Header'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Create />
         </Route>
         <Route exact path="/Map">
+        <Header />
           <Map />
         </Route>
       </Switch>

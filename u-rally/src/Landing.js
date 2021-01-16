@@ -10,7 +10,7 @@ function Landing() {
                 <div class="centered">
                     <h2>CREATE A MOVEMENT</h2>
                     <button class="button-left">
-                        <Link to="/Create">CREATE</Link>
+                        <Link class="link-text"  to="/Create">CREATE</Link>
                     </button>
                 </div>
             </div>
@@ -18,7 +18,7 @@ function Landing() {
                 <div class="centered">
                     <h2>FIND EVENTS</h2>
                     <button class="button-right">
-                    <Link to="/Map">VIEW MAP</Link>
+                    <Link class="link-text" to="/Map">VIEW MAP</Link>
                     </button>
                 </div>
             </div>

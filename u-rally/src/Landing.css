@@ -100,3 +100,8 @@ button {
     border-color: #ffffff;
     color: #ffffff;
 }
+
+.link-text {
+    color: inherit;
+    text-decoration: none;
+}

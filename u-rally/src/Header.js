@@ -1,11 +1,12 @@
 import React from 'react';
+import {Route, Link, BrowserRouter as Router, Switch, BrowserRouter} from 'react-router-dom'
 import './Landing.css'
 
 function Header(){
     return(
         <div /*class="centered topnav"*/ class="topnav">
                 <div class="center">
-                <h2>U RALLY</h2>
+                <Link class="link-text" to="/">U RALLY</Link>
                 </div>
         </div>
     );
