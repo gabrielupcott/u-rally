@@ -1,5 +1,6 @@
 import './App.css';
-import {Route, Link, BrowserRouter as Router, Switch, BrowserRouter} from 'react-router-dom'
+import {Component} from 'react';
+
 import Landing from './Landing'
 import Map from './Map'
 

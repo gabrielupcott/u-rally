@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.form{
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    text-align: left;
+    padding-top: 7%;
+}
+
+h3 {
+    font-size: 45px;
+    padding-top: 10%;
+}
