@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-      <Route exact path="/Landing">
+      <Route exact path="/">
           <Landing />
         </Route>
         <Route exact path="/Create">

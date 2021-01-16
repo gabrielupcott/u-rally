@@ -1,4 +1,5 @@
 import React from 'react';
+import {Route, Link, BrowserRouter as Router, Switch, BrowserRouter} from 'react-router-dom'
 import './Landing.css'
 
 function Landing() {
@@ -9,7 +10,7 @@ function Landing() {
                 <div class="centered">
                     <h2>CREATE A MOVEMENT</h2>
                     <button class="button-left">
-                        CREATE
+                        <Link to="/Create">CREATE</Link>
                     </button>
                 </div>
             </div>
@@ -17,7 +18,7 @@ function Landing() {
                 <div class="centered">
                     <h2>FIND EVENTS</h2>
                     <button class="button-right">
-                       VIEW MAP
+                    <Link to="/Map">VIEW MAP</Link>
                     </button>
                 </div>
             </div>
