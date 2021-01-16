@@ -1,10 +1,13 @@
 import './App.css';
+import {Component} from 'react';
+
 import Landing from './Landing'
+import Map from './Map'
 
 function App() {
   return (
     <div>
-      <Landing/>
+      <Map/>
     </div>
   );
 }
