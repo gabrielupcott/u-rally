@@ -1,14 +1,25 @@
 import './App.css';
-import {Component} from 'react';
-
+import {Route, Link, BrowserRouter as Router, Switch, BrowserRouter} from 'react-router-dom'
+import Routes from './routes'
 import Landing from './Landing'
 import Map from './Map'
+import Create from './Create'
 
 function App() {
   return (
-    <div>
-      <Map/>
-    </div>
+    <BrowserRouter>
+      <Switch>
+      <Route exact path="/Landing">
+          <Landing />
+        </Route>
+        <Route exact path="/Create">
+          <Create />
+        </Route>
+        <Route exact path="/Map">
+          <Map />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
