@@ -43,19 +43,7 @@ return (
 
           </Link>
           </Marker>}
-        { <Popup
-            latitude={43.65}
-            longitude={-78.38}
-            closeButton={false}
-            closeOnClick={true}
-            {...setState}
-            tipSize={20}
-            anchor="right" >
-                <img class="popup-image" src={event} alt="Event Photo"></img>
-                
-
-            </Popup>    
-    }
+    
         </ReactMapGL>
     </div>
     
