@@ -8,9 +8,9 @@ import './mapbox-gl.css';
 import image from './test'
 import event from './exclamation-mark.png'
 import {Route, Link, BrowserRouter as Router, Switch, BrowserRouter} from 'react-router-dom'
-import Landing from './Landing'
 
-function Map() {
+
+function Mappopup() {
   const [viewport, setViewport, setState] = useState({
     //margin-upper: 50,
     width: 1920,
@@ -24,7 +24,9 @@ function Map() {
 //const showPopup = this.state;
 
 return (
-    <div class="map-div">
+  <div>
+
+    <div class="map-one">
 <ReactMapGL
     {...viewport}
     //   width={400}
@@ -37,27 +39,26 @@ return (
       onViewportChange={nextViewport => 
          setViewport(nextViewport)}>   
 
-      { <Marker key={'event'} longitude={-78.38} latitude={44}>
-          <Link to="/Mappopup">
-          <img class="marker-image" src={event} alt="Event Photo"></img>
-
-          </Link>
-          </Marker>}
+      
         { <Popup
-            latitude={43.65}
+            latitude={44}
             longitude={-78.38}
             closeButton={false}
             closeOnClick={true}
             {...setState}
             tipSize={20}
-            anchor="right" >
-                <img class="popup-image" src={event} alt="Event Photo"></img>
-                
+            anchor="bottom" >
+                <img class="popup-image" src={image} alt="Event Photo"></img>
+                <h2>BLM RALLY</h2>
+                <body class="popup-body">
+                    A rally for the BLM protests. Lorem ipsum <br/> Lorem ipsumLorem ipsum Lorem ipsum.
+                </body>
 
             </Popup>    
     }
         </ReactMapGL>
-    </div>
+        </div>
+  </div>
     
   );
 }
@@ -70,4 +71,4 @@ return (
                     A rally for the BLM protests. Lorem ipsum <br/> Lorem ipsumLorem ipsum Lorem ipsum.
                 </body> */}
 
-export default Map
+export default Mappopup

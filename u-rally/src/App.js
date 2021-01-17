@@ -5,7 +5,7 @@ import Landing from './Landing'
 import Map from './Map'
 import Create from './Create'
 import Header from './Header'
-
+import Mappopup from './Mappopup'
 function App() {
   return (
     <BrowserRouter>
@@ -17,8 +17,10 @@ function App() {
           <Create />
         </Route>
         <Route exact path="/Map">
-        <Header />
           <Map />
+        </Route>
+        <Route exact path="/Mappopup">
+        <Mappopup />
         </Route>
       </Switch>
     </BrowserRouter>

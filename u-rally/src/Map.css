@@ -2,3 +2,24 @@
     height: 400px;
     width: 100%;
 }
+
+.popup-image {
+    width: auto;
+    height: 60px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+.popup-body {
+    font-size: 17px;
+    color: #696969;
+}
+
+.marker-image {
+    width: 75px;
+    height: auto;
+    background-color: white;
+    border-radius: 40px;
+}
