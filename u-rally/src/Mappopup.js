@@ -49,7 +49,7 @@ return (
             tipSize={20}
             anchor="bottom" >
                 <img class="popup-image" src={image} alt="Event Photo"></img>
-                <h2>BLM RALLY</h2>
+                <h2 class="popup-text">BLM RALLY</h2>
                 <body class="popup-body">
                     A rally for the BLM protests. Lorem ipsum <br/> Lorem ipsumLorem ipsum Lorem ipsum.
                 </body>
