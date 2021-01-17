@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/u-rally/static/css/main.7100e197.chunk.css",
+    "main.js": "/u-rally/static/js/main.8b0ab700.chunk.js",
+    "main.js.map": "/u-rally/static/js/main.8b0ab700.chunk.js.map",
+    "runtime-main.js": "/u-rally/static/js/runtime-main.78c693ea.js",
+    "runtime-main.js.map": "/u-rally/static/js/runtime-main.78c693ea.js.map",
+    "static/js/2.7e276925.chunk.js": "/u-rally/static/js/2.7e276925.chunk.js",
+    "static/js/2.7e276925.chunk.js.map": "/u-rally/static/js/2.7e276925.chunk.js.map",
+    "index.html": "/u-rally/index.html",
+    "static/css/main.7100e197.chunk.css.map": "/u-rally/static/css/main.7100e197.chunk.css.map",
+    "static/js/2.7e276925.chunk.js.LICENSE.txt": "/u-rally/static/js/2.7e276925.chunk.js.LICENSE.txt",
+    "static/media/test.87b9ffa9.bin": "/u-rally/static/media/test.87b9ffa9.bin"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78c693ea.js",
+    "static/js/2.7e276925.chunk.js",
+    "static/css/main.7100e197.chunk.css",
+    "static/js/main.8b0ab700.chunk.js"
+  ]
+}
