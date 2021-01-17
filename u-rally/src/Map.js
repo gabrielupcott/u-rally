@@ -14,8 +14,6 @@ import dotenv from 'dotenv'
 
 function Map() {
     const API_KEY = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
-    console.log({API_KEY})
-    console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN)
   const [viewport, setViewport, setState] = useState({
     //margin-upper: 50,
     width: 1920,
@@ -27,20 +25,12 @@ function Map() {
     mapboxApiAccessToken: API_KEY
   });
 
-//const showPopup = this.state;
 
 return (
     <div class="map-div">
 <ReactMapGL
     {...viewport}
-    //mapboxApiAccessToken={pk.eyJ1IjoiZ2FicmllbC11cGNvdHQiLCJhIjoiY2trMDJvbWd4MGRlbzJ2bGV5c2JnZ3NkciJ9.n8E876cPUHJ-qiaFaCfLtQ}
-    //   width={400}
-    //   height={400}
-    //   latitude={37.7577}
-    //   longitude={-122.4376}
-    //   zoom={8}
-    //   dragPan='true'
-    //   doubleClickZoom='true'
+    
       onViewportChange={nextViewport => 
          setViewport(nextViewport)}>   
 
