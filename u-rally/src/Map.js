@@ -9,8 +9,13 @@ import image from './test'
 import event from './exclamation-mark.png'
 import {Route, Link, BrowserRouter as Router, Switch, BrowserRouter} from 'react-router-dom'
 import Landing from './Landing'
+import dotenv from 'dotenv'
+
 
 function Map() {
+    const API_KEY = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+    console.log({API_KEY})
+    console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN)
   const [viewport, setViewport, setState] = useState({
     //margin-upper: 50,
     width: 1920,
@@ -18,7 +23,8 @@ function Map() {
     latitude: 43.65,
     longitude: -79.38,
     zoom: 5,
-    showPopup: true
+    showPopup: true,
+    mapboxApiAccessToken: API_KEY
   });
 
 //const showPopup = this.state;
@@ -27,6 +33,7 @@ return (
     <div class="map-div">
 <ReactMapGL
     {...viewport}
+    //mapboxApiAccessToken={pk.eyJ1IjoiZ2FicmllbC11cGNvdHQiLCJhIjoiY2trMDJvbWd4MGRlbzJ2bGV5c2JnZ3NkciJ9.n8E876cPUHJ-qiaFaCfLtQ}
     //   width={400}
     //   height={400}
     //   latitude={37.7577}
@@ -40,7 +47,7 @@ return (
       { <Marker key={'event'} longitude={-78.38} latitude={44}>
           <Link to="/Mappopup">
           <img class="marker-image" src={event} alt="Event Photo"></img>
-
+            <h1></h1>
           </Link>
           </Marker>}
     

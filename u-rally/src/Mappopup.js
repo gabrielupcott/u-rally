@@ -8,9 +8,10 @@ import './mapbox-gl.css';
 import image from './test'
 import event from './exclamation-mark.png'
 import {Route, Link, BrowserRouter as Router, Switch, BrowserRouter} from 'react-router-dom'
-
+import dotenv from 'dotenv'
 
 function Mappopup() {
+  const API_KEY = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
   const [viewport, setViewport, setState] = useState({
     //margin-upper: 50,
     width: 1920,
@@ -18,7 +19,8 @@ function Mappopup() {
     latitude: 43.65,
     longitude: -79.38,
     zoom: 5,
-    showPopup: true
+    showPopup: true,
+    mapboxApiAccessToken: API_KEY
   });
 
 //const showPopup = this.state;
