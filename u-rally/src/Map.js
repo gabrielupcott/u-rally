@@ -35,7 +35,7 @@ return (
          setViewport(nextViewport)}>   
 
       { <Marker key={'event'} longitude={-78.38} latitude={44}>
-          <Link to="/Mappopup">
+          <Link to="/u-rally/Mappopup">
           <img class="marker-image" src={event} alt="Event Photo"></img>
             <h1></h1>
           </Link>

@@ -10,16 +10,16 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-      <Route exact path="/">
+      <Route exact path="/u-rally/">
           <Landing />
         </Route>
-        <Route exact path="/Create">
+        <Route exact path="/u-rally/Create">
           <Create />
         </Route>
-        <Route exact path="/Map">
+        <Route exact path="/u-rally/Map">
           <Map />
         </Route>
-        <Route exact path="/Mappopup">
+        <Route exact path="/u-rally/Mappopup">
         <Mappopup />
         </Route>
       </Switch>

@@ -7,7 +7,7 @@ function Header(){
     return(
         <div class="topnav">
                 <div class="center">
-                <Link class="link-text" to="/">U RALLY</Link>
+                <Link class="link-text" to="/u-rally/">U RALLY</Link>
                 </div>
         </div>
     );

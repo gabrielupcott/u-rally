@@ -5,10 +5,10 @@ import Landing from './Landing'
 import Mappopup from './Mappopup'
 
 const routes = {
-    "/": () => <Landing />,
-    "/Create": () => <Create />,
-    "/Map": () => <Map />,
-    "/Mappopup" : () => <Mappopup />
+    "/u-rally/": () => <Landing />,
+    "/u-rally/Create": () => <Create />,
+    "/u-rally/Map": () => <Map />,
+    "/u-rally/Mappopup" : () => <Mappopup />
 }
 
 export default routes;
